@@ -34,14 +34,13 @@ java -cp ".;lib/junit-4.13.2.jar;lib/hamcrest-core-1.3.jar;grading-area" org.jun
 
 result=`grep "OK (2 tests)" output.txt`
 grep_result="OK (2 tests)"
-# extra careful abour spaces!!
+# extra careful about spaces!!
 if [[ $result != $grep_result ]] 
-
 then
     cat output.txt
 else
 SUCESS="All test passed"
-echo SUCESS
+echo $SUCESS
 fi
 
 # Draw a picture/take notes on the directory structure that's set up after
