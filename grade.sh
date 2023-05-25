@@ -30,7 +30,7 @@ then
 fi
 
 
-java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > output.txt
+java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar:grading-area org.junit.runner.JUnitCore TestListExamples > output.txt
 
 result=`grep "OK (2 tests)" output.txt`
 grep_result="OK (2 tests)"
