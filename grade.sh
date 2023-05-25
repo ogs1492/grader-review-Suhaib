@@ -19,7 +19,7 @@ fi
 cp student-submission/*.java grading-area
 cp TestListExamples.java grading-area
 
-javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" grading-area/*.java 2> error.txt
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar grading-area/*.java 2> error.txt
 # javac grading-area/*.java
 
 if [[ $? != 0 ]]
